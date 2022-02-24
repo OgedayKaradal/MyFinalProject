@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entities.Concrete;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -8,5 +9,7 @@ namespace Business.Constants
     {
         public static string ProductAdded = "Product added.";
         public static string ProductNameInvalid = "Product's name is invalid.";
+        public static string MaintenanceTime = "System is under maintenance.";
+        public static string ProductListed = "Products listed.";
     }
 }
