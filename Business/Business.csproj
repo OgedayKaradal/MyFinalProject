@@ -14,4 +14,12 @@
     <ProjectReference Include="..\Entities\Entities.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="DependencyResolvers\" />
+    <None Remove="DependencyResolvers\Autofac\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DependencyResolvers\" />
+    <Folder Include="DependencyResolvers\Autofac\" />
+  </ItemGroup>
 </Project>
