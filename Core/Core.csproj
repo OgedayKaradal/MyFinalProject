@@ -5,16 +5,31 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="FluentValidation" Version="9.5.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.11" />
+    <PackageReference Include="FluentValidation" Version="9.5.1" />
+    <PackageReference Include="Autofac" Version="6.1.0" />
+    <PackageReference Include="Autofac.Extras.DynamicProxy" Version="6.0.0" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.1.0" />
   </ItemGroup>
 
   <ItemGroup>
     <None Remove="CrossCuttingConcerns\" />
     <None Remove="CrossCuttingConcerns\Validation\" />
+    <None Remove="FluentValidation" />
+    <None Remove="Utilities\Interceptors\" />
+    <None Remove="Autofac" />
+    <None Remove="Autofac.Extras.DynamicProxy" />
+    <None Remove="Autofac.Extensions.DependencyInjection" />
+    <None Remove="Aspects\" />
+    <None Remove="Aspects\Autofac\" />
+    <None Remove="Aspects\Autofac\Validation\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="CrossCuttingConcerns\" />
     <Folder Include="CrossCuttingConcerns\Validation\" />
+    <Folder Include="Utilities\Interceptors\" />
+    <Folder Include="Aspects\" />
+    <Folder Include="Aspects\Autofac\" />
+    <Folder Include="Aspects\Autofac\Validation\" />
   </ItemGroup>
 </Project>
