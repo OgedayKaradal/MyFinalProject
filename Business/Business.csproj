@@ -8,6 +8,9 @@
     <PackageReference Include="Autofac" Version="6.1.0" />
     <PackageReference Include="Autofac.Extras.DynamicProxy" Version="6.0.0" />
     <PackageReference Include="FluentValidation" Version="9.5.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.2.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -21,11 +24,18 @@
     <None Remove="ValidationRules\" />
     <None Remove="ValidationRules\FluentValidation\" />
     <None Remove="FluentValidation" />
+    <None Remove="BusinessAspects\" />
+    <None Remove="BusinessAspects\Autofac\" />
+    <None Remove="Microsoft.AspNetCore.Http.Abstractions" />
+    <None Remove="Autofac.Extensions.DependencyInjection" />
+    <None Remove="Microsoft.Extensions.DependencyInjection" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DependencyResolvers\" />
     <Folder Include="DependencyResolvers\Autofac\" />
     <Folder Include="ValidationRules\" />
     <Folder Include="ValidationRules\FluentValidation\" />
+    <Folder Include="BusinessAspects\" />
+    <Folder Include="BusinessAspects\Autofac\" />
   </ItemGroup>
 </Project>
