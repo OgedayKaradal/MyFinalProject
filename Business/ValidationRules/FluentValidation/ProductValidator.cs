@@ -17,7 +17,7 @@ namespace Business.ValidationRules.FluentValidation
             RuleFor(p => p.CategoryId).NotEmpty();
         }
 
-        bool StockGreaterThanZero(short number)
+        private bool StockGreaterThanZero(short number)
         {
             if (number >= 0)
                 return true;
